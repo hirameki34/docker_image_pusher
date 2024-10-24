@@ -3,3 +3,4 @@ busybox
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 registry.k8s.io/pause:3.8
 kubeedge/edgemesh-agent:v1.17.0
+wasmedge/wasmedge:latest
