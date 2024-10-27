@@ -5,3 +5,10 @@ registry.k8s.io/pause:3.8
 kubeedge/edgemesh-agent:v1.17.0
 wasmedge/wasmedge:latest
 --platform=linux/arm64 hello-world
+--platform=linux/arm64 registry.k8s.io/kube-apiserver:v1.28.15
+--platform=linux/arm64 registry.k8s.io/kube-controller-manager:v1.28.15
+--platform=linux/arm64 registry.k8s.io/kube-scheduler:v1.28.15
+--platform=linux/arm64 registry.k8s.io/kube-proxy:v1.28.15
+--platform=linux/arm64 registry.k8s.io/pause:3.9
+--platform=linux/arm64 registry.k8s.io/etcd:3.5.9-0
+--platform=linux/arm64 registry.k8s.io/coredns/coredns:v1.10.1
