@@ -21,4 +21,5 @@ wasmedge/wasmedge:latest
 --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.15.2
 --platform=linux/arm64 gcr.io/knative-releases/knative.dev/net-kourier/cmd/kourier:v1.15.1
 --platform=linux/arm64 docker.io/envoyproxy/envoy:v1.26-latest
+--platform=linux/arm64 ghcr.io/knative/helloworld-go:latest
 
