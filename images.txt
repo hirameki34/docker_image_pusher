@@ -1,25 +1,23 @@
-gcc
-nginx
-busybox
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-registry.k8s.io/pause:3.8
-kubeedge/edgemesh-agent:v1.17.0
-wasmedge/wasmedge:latest
 --platform=linux/arm64 hello-world
---platform=linux/arm64 registry.k8s.io/kube-apiserver:v1.28.15
---platform=linux/arm64 registry.k8s.io/kube-controller-manager:v1.28.15
---platform=linux/arm64 registry.k8s.io/kube-scheduler:v1.28.15
---platform=linux/arm64 registry.k8s.io/kube-proxy:v1.28.15
---platform=linux/arm64 registry.k8s.io/pause:3.9
---platform=linux/arm64 registry.k8s.io/etcd:3.5.9-0
---platform=linux/arm64 registry.k8s.io/coredns/coredns:v1.10.1
 
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/activator:v1.15.2
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler:v1.15.2
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/controller:v1.15.2
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/webhook:v1.15.2
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.15.2
---platform=linux/arm64 gcr.io/knative-releases/knative.dev/net-kourier/cmd/kourier:v1.15.1
---platform=linux/arm64 docker.io/envoyproxy/envoy:v1.26-latest
---platform=linux/arm64 ghcr.io/knative/helloworld-go:latest
+# --platform=linux/arm64 registry.k8s.io/kube-apiserver:v1.28.15
+# --platform=linux/arm64 registry.k8s.io/kube-controller-manager:v1.28.15
+# --platform=linux/arm64 registry.k8s.io/kube-scheduler:v1.28.15
+# --platform=linux/arm64 registry.k8s.io/kube-proxy:v1.28.15
+# --platform=linux/arm64 registry.k8s.io/pause:3.9
+# --platform=linux/arm64 registry.k8s.io/etcd:3.5.9-0
+# --platform=linux/arm64 registry.k8s.io/coredns/coredns:v1.10.1
+
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/activator:v1.15.2
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler:v1.15.2
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/controller:v1.15.2
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/webhook:v1.15.2
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/serving/cmd/queue:v1.15.2
+
+# --platform=linux/arm64 gcr.io/knative-releases/knative.dev/net-kourier/cmd/kourier:v1.15.1
+# --platform=linux/arm64 docker.io/envoyproxy/envoy:v1.26-latest
+
+# --platform=linux/arm64 ghcr.io/knative/helloworld-go:latest
+
+--platform=linux/arm64 ghcr.io/k8snetworkplumbingwg/multus-cni:snapshot-thick
 
